@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListWorkout">
+
+    <TextView
+        android:id="@+id/tv_titlew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Tên các bài tập"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/im_detail_image"
+        android:src="@drawable/wall_sits"
+        android:layout_centerInParent="true"
+        android:layout_width="400dp"
+        android:layout_height="300dp"/>
+    <LinearLayout
+        android:id="@+id/pause_resume"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        android:layout_above="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_pause"
+            android:text="Tạm dừng"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#F5F5F4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark" />
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_start"
+        android:text="Bắt đầu"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#F5F5F4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:text="30"
+        android:textStyle="bold"
+        android:textSize="70sp"
+        android:layout_above="@id/pause_resume"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

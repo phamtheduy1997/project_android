@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListWorkout">
+
+    <TextView
+        android:id="@+id/tv_titlew"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Luyện tập"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_below="@+id/tv_titlew"
+        android:indeterminate="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mpb_progressStyle="horizontal"
+        android:progressBackgroundTint="@color/yellow"
+        android:progressTint="@color/colorAccent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/im_detail_image"
+        android:src="@drawable/wall_sits"
+        android:layout_centerInParent="true"
+        android:layout_width="400dp"
+        android:layout_height="300dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:id="@+id/layout_get_ready"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtGetReady"
+            android:text="Chuẩn bị"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtCountDown"
+            android:text="10"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_startw"
+        android:text="Bắt đầu"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#F5F5F4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="70sp"
+        android:layout_below="@+id/im_detail_image"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
